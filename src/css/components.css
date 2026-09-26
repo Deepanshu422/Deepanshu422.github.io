@@ -1,0 +1,39 @@
+.btn-outline {
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-mono);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-outline:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: var(--accent);
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 4px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s;
+}
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+}
