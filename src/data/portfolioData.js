@@ -4,7 +4,7 @@ const portfolioData = {
     title: "Sr. R&D Engineer - Applied AI & GenAI",
     tagline: "I build scalable AI workflows.",
     description:
-      "I'm a Senior R&D Engineer specializing in Artificial Intelligence, LLM Evaluation Frameworks, and RAG pipelines. I focus on mapping unstructured data to intelligent, data-driven solutions and automating complex engineering workflows.",
+      "I'm an R&D Engineer - Applied AI & GenAI specializing in AI/LLM-powered application development, RAG pipelines, semantic search. I work on designing, building, and evaluating AI workflows, developing intelligent retrieval systems, and automating complex processes using Python, LangChain, FastAPI, LLM APIs, and workflow automation tools. I focus on transforming unstructured data and business requirements into reliable, scalable AI-driven solutions.",
     email: "2019deepanshu@gmail.com",
     phone: "+91 7895285472",
     github: "https://github.com/Deepanshu422",
@@ -55,8 +55,8 @@ const portfolioData = {
   projects: [
     {
       title: "Autonomous Finance Tracker AI Agent",
-      github: "#",
-      live: "#",
+      github: "https://github.com/Deepanshu422/Autonomous-Finance-Tracker-AI-Agent",
+      live: "https://autonomous-finance-tracker-ai-agent.streamlit.app/",
       bullets: [
         { label: "AI Agent Architecture", text: "Architected a multimodal WhatsApp-native AI agent with both Speech-to-Text (STT) and Text-to-Text (TTT) capabilities, integrating whisper-large-v3-turbo for real-time voice note transcription and chaining all inputs into an LLM parser with strict JSON Schema constraints." },
         { label: "Backend & Automation", text: "Engineered a Supabase (PostgreSQL) backend featuring Role-Based Access Control (RBAC) for in-chat admin approvals, and integrated APScheduler to push automated weekly WhatsApp reports." },
@@ -64,6 +64,26 @@ const portfolioData = {
       ],
       techStack: "Python, FastAPI, Pydantic, Node.js (whatsapp-web.js), Supabase (PostgreSQL), Streamlit, LLM API, Prompt Engineering, Multimodal AI",
     },
+    {
+      title: "Defensive Enterprise Text2SQL Engine",
+      github: "https://github.com/Deepanshu422/Text2SQL-Natural-Language-Database-Querying",
+      live: "https://text2sql-natural-language-database-querying.streamlit.app/",
+      bullets: [
+        {
+          label: "AI-Powered Text-to-SQL Architecture",
+          text: "Architected a Natural Language to SQL engine using LangChain LCEL and Groq LLMs, enabling users to convert complex business questions into executable SQL queries through dynamic database schema inspection and few-shot prompting."
+        },
+        {
+          label: "Enterprise Security & Query Validation",
+          text: "Implemented deterministic SQLGlot AST-based validation to enforce read-only SELECT queries, block SQL injection, statement stacking, and destructive DDL/DML operations. Added SQLAlchemy read-only SQLite connections for defense-in-depth database protection."
+        },
+        {
+          label: "Query Execution & Business Intelligence",
+          text: "Engineered a five-stage pipeline separating SQL generation, security validation, sandboxed execution, and LLM-powered result synthesis. Built a Streamlit dashboard with business-friendly summaries, validated SQL queries, and raw data inspection."
+        }
+      ],
+      techStack: "Python, LangChain, LCEL, Groq LLM, SQLGlot, SQLAlchemy, SQLite, AST Validation, Text-to-SQL, Prompt Engineering, Streamlit, Docker, Pytest"
+    }
   ],
 
   skills: [
